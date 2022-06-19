@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "getdependencies": "npm i @discordjs/builders @discordjs/rest discord.js dotenv fs mongoose",
+    "getdeps": "npm i @discordjs/builders @discordjs/rest discord.js dotenv fs",
+    "load": "node index.js load",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,13 @@
   "bugs": {
     "url": "https://github.com/ItsInqz/dawnbotv2/issues"
   },
-  "homepage": "https://github.com/ItsInqz/dawnbotv2#readme"
+  "homepage": "https://github.com/ItsInqz/dawnbotv2#readme",
+  "dependencies": {
+    "@discordjs/builders": "^0.15.0",
+    "@discordjs/rest": "^0.5.0",
+    "discord.js": "^13.8.0",
+    "dotenv": "^16.0.1",
+    "fs": "^0.0.1-security",
+    "mongoose": "^6.4.0"
+  }
 }
