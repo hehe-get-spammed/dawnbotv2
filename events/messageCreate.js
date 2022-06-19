@@ -12,7 +12,6 @@ module.exports = {
 	name: "messageCreate",
 	async execute(message) {
 		let author = message.member;
-		console.log("message sent ", message);
 		try {
 			if (message.channelId == bannedchannelid) {
 				await author.kick();
