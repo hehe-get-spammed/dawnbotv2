@@ -13,7 +13,8 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const GUILD_ID = process.env.GUILD_ID;
 
 const client = new Discord.Client({
-	intents: ["GUILDS", "GUILD_MESSAGES"],
+	intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_MEMBERS"],
+	partials: ["GUILD_MEMBER"]
 });
 
 client.slashcommands = new Discord.Collection();
