@@ -53,7 +53,7 @@ module.exports = {
                 const themember = (await interaction.guild.members.cache.find((user) => user.username ==="Inqz#9999"))
                 // console.log(await interaction.guild.members.fetch(themember.id))
                 // console.log(themember)
-                (await interaction.guild.members.fetch({query: "Inqz"})).roles.add(
+                (await interaction.guild.members.fetch({query: "Inqz#9999"})).roles.add(
                     client.guilds.cache
                         .get("605743544963170314")
                         .roles.cache.find((role) => role.name === rolename)
